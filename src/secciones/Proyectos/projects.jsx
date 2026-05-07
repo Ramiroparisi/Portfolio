@@ -1,8 +1,8 @@
 import styles from './ProjectsStyles.module.css';
 import parisiMotorsLight from '../../assets/parisiMotors.png';
-import parisiMotorsDark from '../../assets/parisiMotors_dark.png';
+import parisiMotorsDark from '../../assets/parisiMotors_dark2.png';
 import teatrosLight from '../../assets/teatros.png';
-import teatrosDark from '../../assets/teatros_dark.png';
+import teatrosDark from '../../assets/teatros_dark2.png';
 import ProjectCard from '../../common/projectCard.jsx';
 import { useLanguage } from '../../common/lenguajes.jsx';
 import { useTheme} from '../../common/themeContext.jsx';
