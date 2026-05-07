@@ -1,4 +1,4 @@
-import styles from './ProjectsStyles.module.css';
+import styles from './projectsStyles.module.css';
 import parisiMotorsLight from '../../assets/parisiMotors.png';
 import parisiMotorsDark from '../../assets/parisiMotors_dark2.png';
 import teatrosLight from '../../assets/teatros.png';
