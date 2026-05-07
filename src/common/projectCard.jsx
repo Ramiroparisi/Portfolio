@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTheme } from '../common/themeContext.jsx';
 
 function ProjectCard({
   src,
@@ -16,6 +17,7 @@ function ProjectCard({
   githubIcon,
   youtubeIcon,
 }) {
+  const { theme } = useTheme();
   return (
     <article className={cardClassName}>
       <a className={projectLinkClassName} href={link} target="_blank" rel="noreferrer">
@@ -24,7 +26,7 @@ function ProjectCard({
       <h3>{h3}</h3>
       <p>{p}</p>
       <div className={skillsClassName}>{skills}</div>
-      <p className="divider">-------------------</p>
+      <p className="divider" style={{ color: theme === 'light' ? "#222" : "#fff" }}>-------------------</p>
       <div className={socialLinksClassName}>
         {repoLink && (
           <a
