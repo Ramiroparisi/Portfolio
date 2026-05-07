@@ -11,15 +11,16 @@ function LanguageToggleButton() {
         <button
             style={{
                 position: "absolute",
-                top: "10px",
-                right: "10px",
-                backgroundColor: theme === 'light' ? "#222" : "#fff", // Fondo negro en 'light' y blanco en 'dark'
-                color: theme === 'light' ? "#fff" : "#222", // Texto blanco en 'light' y negro en 'dark'
-                border: "1px solid #ccc", // Borde para un mejor contraste
+                top: "20px",
+                right: "20px",
+                backgroundColor: theme === 'light' ? "#222" : "#fff",
+                color: theme === 'light' ? "#fff" : "#222",
+                border: "1px solid #ccc",
                 padding: "10px",
-                borderRadius: "5px",
+                fontSize: "16px",
+                borderRadius: "8px",
                 cursor: "pointer",
-                transition: "background-color 0.3s, color 0.3s", // Transición suave
+                transition: "background-color 0.3s, color 0.3s",
             }}
             onClick={toggleLanguage}
         >

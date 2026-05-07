@@ -66,7 +66,7 @@ function Perfil() {
       </p>
       <a href={cv} download>
         <button className='hover'>
-        CV
+        {language === "en" ? "Resume" : "Descargar CV"}
         </button>
       </a>
     </div>
