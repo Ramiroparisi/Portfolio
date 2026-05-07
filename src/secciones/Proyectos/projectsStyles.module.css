@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  height: auto;
+  padding: 20px 0;
+
+  img {
+    width: 100%;
+    max-width: 300px;
+    align-self: center;
+    background-color: var(--project-card-bg);
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 420px;
+    min-height: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #222;
+    transition: transform 200ms ease-in-out;
+    border-color: #939191;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  a:hover {
+    transform: scale(1.05);
+  }
+.listaHabilidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-self: center;
+  max-width: 20ch;
+
+  img {
+    width: 40px;
+    height: auto;
+  }
+}
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  align-items: stretch;
+  width: 100%;
+}
+
+@media (width >=700px) {
+  .projectsContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0 30px;
+  }
+
+  .projectsContainer > a {
+    max-width: none;
+    height: 100%;
+  }
+}
+
+@media (width < 700px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  .projectsContainer > a {
+    max-width: none;
+  }
+}

@@ -1,8 +1,8 @@
 
-function ListaHabilidades ({src, habilidad}){
+function ListaHabilidades ({src, habilidad, alt}){
     return(
         <span>
-            <img src={src} alt="Icono de react"/>
+            <img src={src} alt={alt ?? `Icono de ${habilidad}`}/>
         </span>
     )
 }
