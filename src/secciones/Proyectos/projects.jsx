@@ -1,7 +1,5 @@
 import styles from './projectsStyles.module.css';
-import parisiMotorsLight from '../../assets/parisiMotors.png';
 import parisiMotorsDark from '../../assets/parisiMotors_dark2.png';
-import teatrosLight from '../../assets/teatros.png';
 import teatrosDark from '../../assets/teatros_dark2.png';
 import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
@@ -20,12 +18,13 @@ import Node from '../../assets/node-js.svg';
 import Bootstrap from '../../assets/bootstrap-svgrepo-com.svg';
 import HTML from '../../assets/html5.svg';
 import CSS from '../../assets/css3.svg';
+import Docker from '../../assets/docker-icon.svg';
 
 function Projects() {
   const { language } = useLanguage();
   const { theme } = useTheme();
-  const parisiMotors = theme === 'light' ? parisiMotorsLight : parisiMotorsDark;
-  const teatros = theme === 'light' ? teatrosLight : teatrosDark;
+  //const parisiMotors = theme === 'light' ? parisiMotorsLight : parisiMotorsDark;
+  //const teatros = theme === 'light' ? teatrosLight : teatrosDark;
   const github = theme === 'light' ? githubLight : githubDark;
 
   return (
@@ -37,7 +36,7 @@ function Projects() {
           projectLinkClassName={styles.projectLink}
           socialLinksClassName={styles.socialLinks}
           socialLinkClassName={styles.socialLink}
-          src={parisiMotors}
+          src={parisiMotorsDark}
           link="https://concesionario-front-navy.vercel.app/"
           repoLink="https://github.com/Ramiroparisi/Concesionario-Back"
           videoLink="https://www.youtube.com/watch?v=7Yfzs_vEhCU"
@@ -54,6 +53,7 @@ function Projects() {
               <ListaHabilidades src={Node} habilidad="Node" alt="Icono de node" />
               <ListaHabilidades src={Express} habilidad="Express" alt="Icono de express" />
               <ListaHabilidades src={SQL} habilidad="SQL" alt="Icono de sql" />
+              <ListaHabilidades src={Docker} habilidad="Docker" alt="Icono de docker" />
             </>
           }
         />
@@ -62,7 +62,7 @@ function Projects() {
           projectLinkClassName={styles.projectLink}
           socialLinksClassName={styles.socialLinks}
           socialLinkClassName={styles.socialLink}
-          src={teatros}
+          src={teatrosDark}
           link="https://concesionario-front-navy.vercel.app/"
           repoLink="https://github.com/Ramiroparisi/Teatro"
           videoLink="https://www.youtube.com/"

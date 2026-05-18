@@ -12,6 +12,7 @@ import Node from '../../assets/node-js.svg';
 import Java from '../../assets/Java.png';
 import Express from '../../assets/express.svg';
 import SQL from '../../assets/sql.svg';
+import Docker from '../../assets/docker-icon.svg';
 import { useLanguage } from '../../common/lenguajes.jsx';
 
 function Habilidades() {
@@ -31,6 +32,7 @@ function Habilidades() {
                 <ListaHabilidades src={Java} habilidad="Java" alt="Icono de java" />
                 <ListaHabilidades src={Express} habilidad="Express" alt="Icono de express" />
                 <ListaHabilidades src={SQL} habilidad="SQL" alt="Icono de sql" />
+                <ListaHabilidades src={Docker} habilidad="Docker" alt="Icono de docker" />
             </div>
         </section>
     )

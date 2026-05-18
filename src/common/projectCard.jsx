@@ -23,8 +23,8 @@ function ProjectCard({
       <a className={projectLinkClassName} href={link} target="_blank" rel="noreferrer">
         <img className="hover" src={src} alt={`${h3} logo`} />
       </a>
-      <h3>{h3}</h3>
-      <p>{p}</p>
+      <h3 style={{ color: theme === 'light' ? "#222" : "#fff" }}>{h3}</h3>
+      <p style={{ color: theme === 'light' ? "#222" : "#fff" }}>{p}</p>
       <div className={skillsClassName}>{skills}</div>
       <p className="divider" style={{ color: theme === 'light' ? "#222" : "#fff" }}>-------------------</p>
       <div className={socialLinksClassName}>

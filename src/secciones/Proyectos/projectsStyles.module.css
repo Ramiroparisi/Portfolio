@@ -54,7 +54,7 @@
   gap: 16px;
   flex-wrap: wrap;
   align-self: center;
-  max-width: 20ch;
+  max-width: 30ch;
 
   img {
     width: 40px;
@@ -91,6 +91,13 @@
 
 .socialLink:hover {
   transform: translateY(-2px);
+}
+
+.projectsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 h1 {
