@@ -20,7 +20,7 @@ function MobileProjects() {
 
   return (
     <section id="projects" className={styles.container}>
-      <h1 className="sectionTitle">Mobile Projects</h1>
+      <h1 className="sectionTitle">{language === "en" ? "Mobile projects" : "Proyectos mobile"}</h1>
       <div className={styles.projectsContainer}>
         <MobileProjectCard
           cardClassName={styles.projectCard}
@@ -45,6 +45,15 @@ function MobileProjects() {
               <ListaHabilidades src={Appwrite} habilidad="Appwrite" alt="Icono de appwrite" />
             </>
           }
+          backText={language === "en"
+            ? "Mobile implementation developed with React Native and Expo, offering catalog browsing, interactive lists, and backend cloud support."
+            : "Implementación móvil desarrollada con React Native y Expo, que ofrece navegación de películas e integración ágil en la nube."
+          }
+          backText2={language === "en"
+            ? "Here is the youtube link to the project explanation."
+            : "Aquí está el enlace de YouTube con la explicación del proyecto."
+          }
+          videoLink2="https://www.youtube.com/watch?v=7Yfzs_vEhCU"
         />        
       </div>
     </section>

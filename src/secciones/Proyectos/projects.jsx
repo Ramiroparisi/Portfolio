@@ -23,13 +23,11 @@ import Docker from '../../assets/docker-icon.svg';
 function Projects() {
   const { language } = useLanguage();
   const { theme } = useTheme();
-  //const parisiMotors = theme === 'light' ? parisiMotorsLight : parisiMotorsDark;
-  //const teatros = theme === 'light' ? teatrosLight : teatrosDark;
   const github = theme === 'light' ? githubLight : githubDark;
 
   return (
     <section id="projects" className={styles.container}>
-      <h1 className="sectionTitle">Projects</h1>
+      <h1 className="sectionTitle">{language === "en" ? "Projects" : "Proyectos"}</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
           cardClassName={styles.projectCard}
@@ -56,6 +54,15 @@ function Projects() {
               <ListaHabilidades src={Docker} habilidad="Docker" alt="Icono de docker" />
             </>
           }
+        backText={language === "en" 
+          ? "A complete platform for buying and selling vehicles, featuring an administrative control panel, filter metrics, and database integration via Docker Compose." 
+          : "Una plataforma completa para la compra y venta de vehículos, equipada con un panel de control administrativo, filtros y entornos dockerizados."
+        }
+        backText2={language === "en"
+          ? "Here is the youtube link to the project explanation."
+          : "Aquí está el enlace de YouTube con la explicación del proyecto."
+        }
+        videoLink2="https://www.youtube.com/watch?v=7Yfzs_vEhCU"
         />
         <ProjectCard
           cardClassName={styles.projectCard}
@@ -80,6 +87,15 @@ function Projects() {
               <ListaHabilidades src={SQL} habilidad="SQL" alt="Icono de sql" />
             </>
           }
+          backText={language === "en" 
+            ? "A complete platform for buying tickets for all Rosario, Argentina theatres, featuring an administrative control panel, filter metrics, and database integration." 
+            : "Una plataforma completa para la compra de tickets para todos los teatros de Rosario, Argentina, equipada con un panel de control administrativo, filtros e integración de base de datos."
+          }
+          backText2={language === "en"
+            ? "Here is the youtube link to the project explanation."
+            : "Aquí está el enlace de YouTube con la explicación del proyecto."
+          }
+          videoLink2="https://www.youtube.com/watch?v=7Yfzs_vEhCU"
         />        
       </div>
     </section>
