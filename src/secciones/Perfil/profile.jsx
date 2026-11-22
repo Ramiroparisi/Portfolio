@@ -3,11 +3,10 @@ import perfilLight from '../../assets/perfil-Photoroom.png';
 import perfilDark from '../../assets/perfil-Photoroom.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
-import CV from '../../assets/RamiroParisi_CV.pdf';
-import cvEspañol from '../../assets/RamiroParisiCV_Es.pdf';
-import cvIngles from '../../assets/RamiroParisiCV_En.pdf';
-import twitterLight from '../../assets/twitter-light.svg';
-import twitterDark from '../../assets/twitter-dark.svg';
+
+import cvEspañol from '../../assets/CV Ramiro Parisi Mobile Es.pdf';
+import cvIngles from '../../assets/CV Ramiro Parisi Mobile En.pdf';
+
 
 import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
